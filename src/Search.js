@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { Button } from 'react-bootstrap';
 
 import SearchBar from './SearchBar';
+import './Search.css';
 
 class Search extends React.Component {
   state = {
@@ -11,11 +12,13 @@ class Search extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="search">
         <SearchBar
           onChange={searchText => this.setState({ searchText })}
         />
         <Button
+          className="search-button"
+          bsStyle="primary"
           disabled={!this.state.searchText}
           onClick={() => this.props.onSearch(this.state.searchText)}
         >Search

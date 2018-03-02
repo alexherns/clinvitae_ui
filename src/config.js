@@ -4,8 +4,8 @@ const settings = {
   global: {
     clinvitae: {
       baseUrl: 'https://clinvitae.invitae.com/',
-      searchPath: 'variants',
-      autocompletePath: 'genes/suggestions',
+      searchPath: 'v0/variants',
+      autocompletePath: 'v0/genes/suggestions',
     },
   },
   development: {
